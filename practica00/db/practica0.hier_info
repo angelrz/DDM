@@ -1,0 +1,10 @@
+|practica0
+A => E.IN0
+A => F.IN0
+B => E.IN1
+C => F.IN1
+C => G.IN0
+D => G.IN1
+Q << Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

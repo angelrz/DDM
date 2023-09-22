@@ -1,3 +1,23 @@
-*.qpf 
-*.qsf
-*.qws
+# Archivos generados por herramientas de síntesis y simulación
+*.o
+*.obj
+*.vcd
+*.fst
+*.sdo
+*.rpt
+*.dat
+*.out
+*.exe
+*.db
+*.dbs
+*.log
+*.log.txt
+*.vsim
+*.vsimsa
+.vscode/
+*.vivado/
+*.quartus/
+
+# Archivos temporales y de intercambio
+*.swp
+*.swo

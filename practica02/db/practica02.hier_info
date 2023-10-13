@@ -1,0 +1,116 @@
+|practica02
+E <= mux:inst3.SEG[7]
+D => mux:inst3.SEL
+A => deco_let:inst.NUM[2]
+A => deco_num:inst2.NUM[2]
+B => deco_let:inst.NUM[1]
+B => deco_num:inst2.NUM[1]
+C => deco_let:inst.NUM[0]
+C => deco_num:inst2.NUM[0]
+F <= mux:inst3.SEG[6]
+G <= mux:inst3.SEG[5]
+H <= mux:inst3.SEG[4]
+I <= mux:inst3.SEG[3]
+J <= mux:inst3.SEG[2]
+K <= mux:inst3.SEG[1]
+L <= mux:inst3.SEG[0]
+
+
+|practica02|mux:inst3
+N[0] => SEG.DATAB
+N[1] => SEG.DATAB
+N[2] => SEG.DATAB
+N[3] => SEG.DATAB
+N[4] => SEG.DATAB
+N[5] => SEG.DATAB
+N[6] => SEG.DATAB
+N[7] => SEG.DATAB
+L[0] => SEG.DATAA
+L[1] => SEG.DATAA
+L[2] => SEG.DATAA
+L[3] => SEG.DATAA
+L[4] => SEG.DATAA
+L[5] => SEG.DATAA
+L[6] => SEG.DATAA
+L[7] => SEG.DATAA
+SEG[0] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[1] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEG[7] <= SEG.DB_MAX_OUTPUT_PORT_TYPE
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+SEL => SEG.OUTPUTSELECT
+
+
+|practica02|deco_let:inst
+NUM[0] => Mux0.IN10
+NUM[0] => Mux1.IN10
+NUM[0] => Mux2.IN10
+NUM[0] => Mux3.IN10
+NUM[0] => Mux4.IN10
+NUM[0] => Mux5.IN10
+NUM[0] => Mux6.IN10
+NUM[1] => Mux0.IN9
+NUM[1] => Mux1.IN9
+NUM[1] => Mux2.IN9
+NUM[1] => Mux3.IN9
+NUM[1] => Mux4.IN9
+NUM[1] => Mux5.IN9
+NUM[1] => Mux6.IN9
+NUM[2] => Mux0.IN8
+NUM[2] => Mux1.IN8
+NUM[2] => Mux2.IN8
+NUM[2] => Mux3.IN8
+NUM[2] => Mux4.IN8
+NUM[2] => Mux5.IN8
+NUM[2] => Mux6.IN8
+SEG[0] <= <VCC>
+SEG[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica02|deco_num:inst2
+NUM[0] => Mux0.IN10
+NUM[0] => Mux1.IN10
+NUM[0] => Mux2.IN10
+NUM[0] => Mux3.IN10
+NUM[0] => Mux4.IN10
+NUM[0] => Mux5.IN10
+NUM[1] => Mux0.IN9
+NUM[1] => Mux1.IN9
+NUM[1] => Mux2.IN9
+NUM[1] => Mux3.IN9
+NUM[1] => Mux4.IN9
+NUM[1] => Mux5.IN9
+NUM[1] => Mux6.IN5
+NUM[2] => Mux0.IN8
+NUM[2] => Mux1.IN8
+NUM[2] => Mux2.IN8
+NUM[2] => Mux3.IN8
+NUM[2] => Mux4.IN8
+NUM[2] => Mux5.IN8
+NUM[2] => Mux6.IN4
+SEG[0] <= <VCC>
+SEG[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

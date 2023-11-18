@@ -1,6 +1,6 @@
- -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Copyright (C) 2023  Intel Corporation. All rights reserved.
  -- Your use of Intel Corporation's design tools, logic functions 
- -- and other software and tools, and its AMPP partner logic 
+ -- and other software and tools, and any partner logic 
  -- functions, and any output files from any of the foregoing 
  -- (including device programming or simulation files), and any 
  -- associated documentation or information are expressly subject 
@@ -10,7 +10,8 @@
  -- agreement, including, without limitation, that your use is for
  -- the sole purpose of programming logic devices manufactured by
  -- Intel and sold by Intel or its authorized distributors.  Please
- -- refer to the applicable agreement for further details.
+ -- refer to the applicable agreement for further details, at
+ -- https://fpgasoftware.intel.com/eula.
  -- 
  -- This is a Quartus Prime output file. It is for reporting purposes only, and is
  -- not intended for use as a Quartus Prime input file. This file cannot be used
@@ -64,7 +65,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 CHIP  "practica02"  ASSIGNED TO AN: 10M50DAF484C7G
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -170,10 +171,10 @@ C                            : C10       : input  : 2.5 V             :         
 B                            : C11       : input  : 2.5 V             :         : 7         : Y              
 D                            : C12       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 7         :                
-E                            : C14       : output : 2.5 V             :         : 7         : Y              
-G                            : C15       : output : 2.5 V             :         : 7         : Y              
-H                            : C16       : output : 2.5 V             :         : 7         : Y              
-K                            : C17       : output : 2.5 V             :         : 7         : Y              
+DISP[7]                      : C14       : output : 2.5 V             :         : 7         : Y              
+DISP[5]                      : C15       : output : 2.5 V             :         : 7         : Y              
+DISP[4]                      : C16       : output : 2.5 V             :         : 7         : Y              
+DISP[1]                      : C17       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 6         :                
@@ -193,9 +194,9 @@ GND                          : D11       : gnd    :                   :         
 A                            : D12       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
-L                            : D15       : output : 2.5 V             :         : 7         : Y              
+DISP[0]                      : D15       : output : 2.5 V             :         : 7         : Y              
 GND                          : D16       : gnd    :                   :         :           :                
-J                            : D17       : output : 2.5 V             :         : 7         : Y              
+DISP[2]                      : D17       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D19       :        :                   :         : 6         :                
 GND                          : D20       : gnd    :                   :         :           :                
@@ -215,8 +216,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E14       :        :                   :         : 7         :                
-F                            : E15       : output : 2.5 V             :         : 7         : Y              
-I                            : E16       : output : 2.5 V             :         : 7         : Y              
+DISP[6]                      : E15       : output : 2.5 V             :         : 7         : Y              
+DISP[3]                      : E16       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E17       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 6         :                

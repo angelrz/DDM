@@ -5,12 +5,11 @@ ENTITY mux IS
 	PORT(N,L : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 			SEG : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 			SEL : IN STD_LOGIC);
-	
 END mux;
 
 ARCHITECTURE am OF mux IS
 BEGIN
 	WITH SEL select
-		SEG <= N when '0',
+		SEG <= N when '0',  -- multiplexor de 2 a 1
 		L when others;
 END am;

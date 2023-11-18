@@ -1,5 +1,12 @@
 |practica02
-E <= mux:inst3.SEG[7]
+DISP[0] <= mux:inst3.SEG[0]
+DISP[1] <= mux:inst3.SEG[1]
+DISP[2] <= mux:inst3.SEG[2]
+DISP[3] <= mux:inst3.SEG[3]
+DISP[4] <= mux:inst3.SEG[4]
+DISP[5] <= mux:inst3.SEG[5]
+DISP[6] <= mux:inst3.SEG[6]
+DISP[7] <= mux:inst3.SEG[7]
 D => mux:inst3.SEL
 A => deco_let:inst.NUM[2]
 A => deco_num:inst2.NUM[2]
@@ -7,13 +14,6 @@ B => deco_let:inst.NUM[1]
 B => deco_num:inst2.NUM[1]
 C => deco_let:inst.NUM[0]
 C => deco_num:inst2.NUM[0]
-F <= mux:inst3.SEG[6]
-G <= mux:inst3.SEG[5]
-H <= mux:inst3.SEG[4]
-I <= mux:inst3.SEG[3]
-J <= mux:inst3.SEG[2]
-K <= mux:inst3.SEG[1]
-L <= mux:inst3.SEG[0]
 
 
 |practica02|mux:inst3

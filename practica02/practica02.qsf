@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE 10M50DAF484C7G
 set_global_assignment -name TOP_LEVEL_ENTITY practica02
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:45:36  OCTOBER 11, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -57,12 +57,12 @@ set_location_assignment PIN_C10 -to C
 set_location_assignment PIN_C11 -to B
 set_location_assignment PIN_D12 -to A
 set_location_assignment PIN_C12 -to D
-set_location_assignment PIN_C14 -to E
-set_location_assignment PIN_E15 -to F
-set_location_assignment PIN_C15 -to G
-set_location_assignment PIN_C16 -to H
-set_location_assignment PIN_E16 -to I
-set_location_assignment PIN_D17 -to J
-set_location_assignment PIN_C17 -to K
-set_location_assignment PIN_D15 -to L
+set_location_assignment PIN_C14 -to DISP[7]
+set_location_assignment PIN_E15 -to DISP[6]
+set_location_assignment PIN_C15 -to DISP[5]
+set_location_assignment PIN_C16 -to DISP[4]
+set_location_assignment PIN_E16 -to DISP[3]
+set_location_assignment PIN_D17 -to DISP[2]
+set_location_assignment PIN_C17 -to DISP[1]
+set_location_assignment PIN_D15 -to DISP[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

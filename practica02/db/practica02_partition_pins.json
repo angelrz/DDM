@@ -4,31 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "E",
+					"name" : "DISP[7]",
 					"strict" : false
 				},
 				{
-					"name" : "F",
+					"name" : "DISP[6]",
 					"strict" : false
 				},
 				{
-					"name" : "G",
+					"name" : "DISP[5]",
 					"strict" : false
 				},
 				{
-					"name" : "H",
+					"name" : "DISP[4]",
 					"strict" : false
 				},
 				{
-					"name" : "I",
+					"name" : "DISP[3]",
 					"strict" : false
 				},
 				{
-					"name" : "J",
+					"name" : "DISP[2]",
 					"strict" : false
 				},
 				{
-					"name" : "K",
+					"name" : "DISP[1]",
 					"strict" : false
 				},
 				{

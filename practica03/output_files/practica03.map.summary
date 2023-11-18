@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Nov 18 17:05:40 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : practica03
+Top-level Entity Name : practica03
+Family : MAX 10
+Total logic elements : 42
+    Total combinational functions : 26
+    Dedicated logic registers : 20
+Total registers : 20
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

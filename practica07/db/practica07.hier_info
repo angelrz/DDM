@@ -1,0 +1,85 @@
+|practica07
+P <= ASM:inst2.P
+CLK => divf:inst.CLK_MST
+A[0] => ASM:inst2.A[0]
+A[1] => ASM:inst2.A[1]
+A[2] => ASM:inst2.A[2]
+A[3] => ASM:inst2.A[3]
+Y[0] <= ASM:inst2.Y[0]
+Y[1] <= ASM:inst2.Y[1]
+Y[2] <= ASM:inst2.Y[2]
+Y[3] <= ASM:inst2.Y[3]
+Y[4] <= ASM:inst2.Y[4]
+Y[5] <= ASM:inst2.Y[5]
+Y[6] <= ASM:inst2.Y[6]
+Y[7] <= ASM:inst2.Y[7]
+
+
+|practica07|ASM:inst2
+CLK => AUX[0].CLK
+CLK => AUX[1].CLK
+CLK => AUX[2].CLK
+CLK => AUX[3].CLK
+CLK => AUX[4].CLK
+CLK => AUX[5].CLK
+CLK => AUX[6].CLK
+CLK => AUX[7].CLK
+CLK => AUX[8].CLK
+CLK => AUX[9].CLK
+CLK => AUX[10].CLK
+CLK => AUX[11].CLK
+CLK => AUX[12].CLK
+CLK => AUX[13].CLK
+CLK => Y[0]~reg0.CLK
+CLK => Y[1]~reg0.CLK
+CLK => Y[2]~reg0.CLK
+CLK => Y[3]~reg0.CLK
+CLK => Y[4]~reg0.CLK
+CLK => Y[5]~reg0.CLK
+CLK => Y[6]~reg0.CLK
+CLK => Y[7]~reg0.CLK
+CLK => P~reg0.CLK
+CLK => PRESENTE~1.DATAIN
+A[0] => PRESENTE.DATAB
+A[0] => Equal0.IN3
+A[0] => PRESENTE.DATAB
+A[1] => PRESENTE.DATAB
+A[1] => Equal0.IN2
+A[1] => PRESENTE.DATAB
+A[2] => PRESENTE.DATAB
+A[2] => Equal0.IN1
+A[2] => PRESENTE.DATAB
+A[3] => Selector1.IN4
+A[3] => Equal0.IN0
+A[3] => PRESENTE.DATAB
+P <= P~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[0] <= Y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica07|divf:inst
+CLK_MST => AUX[0].CLK
+CLK_MST => AUX[1].CLK
+CLK_MST => AUX[2].CLK
+CLK_MST => AUX[3].CLK
+CLK_MST => AUX[4].CLK
+CLK_MST => AUX[5].CLK
+CLK_MST => AUX[6].CLK
+CLK_MST => AUX[7].CLK
+CLK_MST => AUX[8].CLK
+CLK_MST => AUX[9].CLK
+CLK_MST => AUX[10].CLK
+CLK_MST => AUX[11].CLK
+CLK_MST => AUX[12].CLK
+CLK_MST => AUX[13].CLK
+CLK_MST => AUX[14].CLK
+CLK_MST => CLK~reg0.CLK
+CLK <= CLK~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

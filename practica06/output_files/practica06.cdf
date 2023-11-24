@@ -1,10 +1,10 @@
-/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition */
+/* Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/alumno/Documentos/practica06/output_files/") File("practica06.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/Users/angel/Documents/GitHub/DDM/practica06/output_files/") File("practica06.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

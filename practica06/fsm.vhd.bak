@@ -21,10 +21,10 @@ BEGIN
 				WHEN V1 => SEM <= 0; -- TAREAS EN INICIO
 								PRESENTE <= V2;
 								
-				WHEN V2 => SEM <= 0; -- TAREAS EN ESTADO 1
+				WHEN V2 => SEM <= 0; -- TAREAS EN ESTADO V1
 								PRESENTE <= V3;
 								
-				WHEN V3 => SEM <= 0;
+				WHEN V3 => SEM <= 0;	-- TAREAS EN ESTADO V2
 								PRESENTE <= A1;
 				
 				WHEN A1 => SEM <= 1;
@@ -37,13 +37,13 @@ BEGIN
 								PRESENTE <= R2;
 								
 				WHEN R2 => SEM <= 2;
-								IF P = '0' THEN
+								IF P = '0' THEN -- CONDICION BOTON PEATON
 									PRESENTE <= R3;
 								ELSE
 									PRESENTE <= V1;
 								END IF;
 				
-				WHEN R3 => SEM <= 2 -- TAREAS EN ESTADO2
+				WHEN R3 => SEM <= 2; -- TAREAS EN ESTADOR3
 								PRESENTE <= R4;
 								
 				WHEN R4 => SEM <= 2;

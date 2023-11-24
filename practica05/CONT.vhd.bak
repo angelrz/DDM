@@ -1,23 +1,23 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY CONT IS
-	PORT(CLK, RST:STD_LOGIC;
-		CUENTA: BUFFER INTEGER RANGE 0 TO 9);
-END ENTITY;
+entity CONT is
+	port(CLK, RST: in std_logic;
+		  CUENTA: buffer integer range 0 to 10);
+end entity;
 
-ARCHITECTURE amr OF CONT IS
-	BEGIN
-		PROCESS(CLK,RST)
-		BEGIN	
-		IF FALLING_EDGE(CLK) THEN
-			IF RST='1' THEN
-				 CUENTA <= 0;
-			ELSIF CUENTA = 9 THEN
+architecture Behavioral of CONT is
+	begin
+	process(CLK, RST)
+		begin
+		if falling_edge(CLK) then
+			if RST = '1' then
 				CUENTA <= 0;
-			ELSE
+			elsif CUENTA = 10 then
+				CUENTA <= 0;
+			else
 				CUENTA <= CUENTA + 1;
-			END IF;
-		END IF;
-	END PROCESS;
-END amr;
+			end if;
+		end if;
+	end process;
+end Behavioral;

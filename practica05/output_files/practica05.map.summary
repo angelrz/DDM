@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Nov 19 01:05:54 2023
+Analysis & Synthesis Status : Successful - Fri Nov 24 02:02:50 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : practica05
 Top-level Entity Name : practica05
 Family : MAX 10
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
+Total logic elements : 108
+    Total combinational functions : 84
+    Dedicated logic registers : 54
+Total registers : 54
 Total pins : 50
 Total virtual pins : 0
 Total memory bits : 0

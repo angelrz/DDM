@@ -9,7 +9,7 @@ END deco_num;
 ARCHITECTURE am OF deco_num IS
 	BEGIN
 	WITH NUM SELECT
-	-- Decodificador de 1-7
+	-- Decodificador de 4:7
 	SEG <= "00000011" WHEN 0,
 			 "10011111" WHEN 1,
 			 "00100101" WHEN 2,

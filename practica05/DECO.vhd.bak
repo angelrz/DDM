@@ -2,27 +2,20 @@ library IEEE;
 use IEEE.std_logic_1164.ALL;
 
 entity DECO is
-	port(NUM: in INTEGER RANGE 0 to 15;
-		SEG: OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
-end DECO;
+	port(NUM: in integer range 0 to 9;
+		  SEG: out std_logic_vector(7 downto 0));
+end entity;
 
 architecture Behavioral of DECO is
 begin
-	with num select
-	SEG <= "00000011" when 0,
-			 "10011111" when 1,
-			 "00100101" when 2,
-			 "00001101" when 3,
-			 "10011001" when 4,
-			 "01001001" when 5,
-			 "01000001" when 6,
-			 "00011101" when 7,
-			 "00000001" when 8,
-			 "00011001" when 9,
-			 "11000001" when 10,-- A
-			 "01100011" when 11,--B
-			 "10000101" when 12,--C
-			 "01100001" when 13,--D
-			 "01110001" when 14,--E
-			 "01000001" when others;--F
-end Behavioral;		 
+	with NUM select
+	SEG <= "10010001" when 1, -- H
+			 "00000011" when 2, -- O
+			 "11100011" when 3, -- L
+			 "00010001" when 4, -- A
+			 "00110001" when 6, -- P
+			 "00010001" when 7, -- A
+			 "00110001" when 8, -- P
+			 "10000011" when 9, -- U
+			 "11111111" when others;
+end Behavioral;

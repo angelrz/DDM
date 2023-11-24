@@ -1,11 +1,11 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY DIPO IS
-	PORT(CLK:STD_LOGIC;
-		D: IN INTEGER RANGE 0 TO 9;
-		Q1, Q2, Q3, Q4: BUFFER INTEGER RANGE 0 TO 9);
-END ENTITY;
+entity DIPO is
+	port(CLK: in std_logic;
+		  D: in integer range 0 to 10;
+		  Q1, Q2, Q3, Q4, Q5, Q6: buffer integer range 0 to 10);
+end entity;
 
 ARCHITECTURE BEAS OF DIPO IS
 BEGIN
@@ -16,6 +16,8 @@ BEGIN
 		Q2 <= Q1;
 		Q3 <= Q2;
 		Q4 <= Q3;
+		Q5 <= Q4;
+		Q6 <= Q5;
 	END IF;
 	END PROCESS;
 END BEAS;

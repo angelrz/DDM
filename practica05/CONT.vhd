@@ -16,7 +16,7 @@ architecture Behavioral of CONT is
 			elsif CUENTA = 10 then
 				CUENTA <= 0;
 			else
-				CUENTA <= CUENTA+1;
+				CUENTA <= CUENTA + 1;
 			end if;
 		end if;
 	end process;

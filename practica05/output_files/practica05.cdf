@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/angel/Documentos/ddm/practica05/output_files/") File("practica05.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/Users/angel/Documents/GitHub/DDM/practica05/output_files/") File("practica05.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

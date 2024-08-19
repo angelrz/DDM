@@ -1,23 +1,44 @@
-# Archivos generados por herramientas de síntesis y simulación
-*.o
-*.obj
-*.vcd
-*.fst
-*.sdo
-*.rpt
-*.dat
-*.out
-*.exe
-*.db
-*.dbs
-*.log
-*.log.txt
-*.vsim
-*.vsimsa
-.vscode/
-*.vivado/
-*.quartus/
+# Archivos de proyecto y base de datos generados por Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+*.sdf
+*.qws
 
-# Archivos temporales y de intercambio
-*.swp
-*.swo
+# Archivos de compilación y configuración de usuario
+*.rpt
+*.summary
+*.done
+*.cmp.rpt
+*.pin
+*.chg
+*.sof
+*.pof
+*.smsg
+*.jdi
+*.jtag
+
+# Archivos temporales
+*.log
+*.bak
+*.bpf
+*.hps
+*.htm
+*.html
+*.qsf.bak
+*.cdf
+*.svf
+*.bsf
+
+# Configuración específica del usuario (por ejemplo, ventanas abiertas)
+*.tcl
+*.sopcinfo
+*.qws
+
+# Archivos de settings y de dependencias
+quartus_sh_compile.log
+*.qar
+*.qip
+*.qpf
+*.qsf
